@@ -5,14 +5,13 @@ public class ejemploAutomovil {
         Automovil subaru = new Automovil("subaru", "Impresa");
 
 
-
         subaru.setCilindrada(2.0);
-        subaru.setColor("blanco");
+        subaru.setColor(Color.BLANCO);
 
         Automovil nissan = new Automovil("nissan", "bt-50", 2.0);
         System.out.println("nissan = " + nissan.getFabricante());
 
-        Automovil mazda = new Automovil("mazda", "amarillo", "verde", 3.5, 60);
+        Automovil mazda = new Automovil("mazda", "amarillo", Color.ROJO, 3.5, 60);
 
         Automovil nissan2 = new Automovil("nissan", "bt-50", 2.0);
         System.out.println("son iguales? " + (nissan == nissan2));
@@ -22,6 +21,7 @@ public class ejemploAutomovil {
         Date fecha = new Date();
         System.out.println("mazda.leerFabricante() = " + mazda.getFabricante());
 
+
         System.out.println(subaru.verDetalle());
         System.out.println(mazda.verDetalle());
         System.out.println(subaru.acelerar(3000));
@@ -30,6 +30,16 @@ public class ejemploAutomovil {
         System.out.println(mazda.acerarFrenar(4000));
         System.out.println(auto.equals(fecha));//no puede comparar no puede hacer cast
         System.out.println(auto.equals(nissan));
+
+        //////////////// methods toString/////////////////////////////
+
+        /*representar el objeto en una cadena  */
+        System.out.println(nissan);// implicita
+        System.out.println(nissan.toString());// explicita
+
+////////////////////////////////////////////////////////////
+
+
 // se trata de polimorfismo: diferentes formas de hacer lo mismo
 
         //principio de encapsulamiento que se confundo con el principio de ocultación
