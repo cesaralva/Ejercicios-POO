@@ -9,7 +9,7 @@ public class Automovil { // clase entidad representa la clase de la application 
 //funciones de los metodos // dentro de los parametros o parentesis entarn la clase metodo
     //no se debe imprimir en el metodo
 
-    ///////////constructor vacio///////////////
+    ///////////constructor vacio////////////////////
     public Automovil() {
     }
 
